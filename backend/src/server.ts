@@ -4,6 +4,7 @@ import { getRepository } from 'typeorm';
 import Orphanage from './models/Orphanage';
 
 const app = express();
+app.use(express.json());
 
 
 app.post('/orphanages', async (request, response) => {
